@@ -121,6 +121,10 @@ body {
     padding: 50px 0 50px;
     position: relative;
 
+    &.full {
+      background: url(../img/bg-footer.png) no-repeat center/cover;
+    }
+
     * {
       color: #fff;
     }
@@ -150,6 +154,14 @@ body {
         padding: 0.5rem 1rem;
       }
     }
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  .text-left {
+    text-align: left;
   }
 
   a:hover {
