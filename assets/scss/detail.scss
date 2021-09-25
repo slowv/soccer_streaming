@@ -369,6 +369,12 @@ $desktop-width: 1024px;
 
     .tab-pane {
       height: calc(100% - (1rem + 38px));
+
+      iframe {
+        @include tablet {
+          height: 400px;
+        }
+      }
     }
 
     & > .active {
