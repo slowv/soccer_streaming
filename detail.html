@@ -6,22 +6,41 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Xem trực tiếp</title>
-    <link rel="stylesheet" href="../assets/lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/lib/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="../assets/scss/style.css">
-    <link rel="stylesheet" href="../assets/scss/detail.css">
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <link rel="stylesheet" href="assets/scss/detail.css">
 </head>
 <body class="single-live">
 <div id="app">
     <header>
-        <div class="container d-none d-lg-flex justify-content-between align-middle">
-            <div class="box-logo d-flex align-items-center justify-content-cente">
-                <a href="../index.html" class=""><img src="../assets/img/90phutnet.png" alt=""></a>
+        <div class="container d-flex flex-row-reverse">
+            <div class="navbar-brand">
+                <a href="./index.html" title="يلا شوت الجديد الرسمي">
+                    <span>يلا شوت الجديد</span>
+                    <span>yalla-shoot-new.com</span>
+                </a>
             </div>
             <nav class="nav-desktop">
-                <ul>
-                    <li><a href="/">Trang chủ</a></li>
+                <div class="social-box">
+                    <ul>
+                        <li>
+                            <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="tw"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="te"><i class="fab fa-telegram-plane"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="link">
+                    <li><a href="/index.html">Trang chủ</a></li>
                     <li><a href="#">Lịch thi đấu</a></li>
                     <li><a href="#">video highlight</a></li>
                     <li><a href="#">Bảng xếp hạng</a></li>
@@ -36,9 +55,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 d-flex justify-content-between align-items-center">
-                        <div id="logo-mb">
-                            <a title="" href="#">
-                                <img class="lazyload" src="../assets/img/90phutnet.png" alt="">
+                        <div class="navbar-brand">
+                            <a href="./index.html" title="يلا شوت الجديد الرسمي">
+                                <span>يلا شوت الجديد</span>
+                                <span>yalla-shoot-new.com</span>
                             </a>
                         </div>
                         <div class="button-navbar">
@@ -46,14 +66,13 @@
                             <div class="bar2"></div>
                             <div class="bar3"></div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
         <nav id="mainnav-mobi" class="mainnav d-none">
             <ul id="menu-menu-header-1" class="header-nav-main">
-                <li class="d-flex flex-row"><a href="../index.html">Trang chủ</a></li>
+                <li class="d-flex flex-row"><a href="index.html">Trang chủ</a></li>
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67"><a href="#">Lịch thi
                     đấu</a></li>
                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="#">Video
@@ -68,6 +87,14 @@
                         href="#">Livescore</a></li>
                 <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-925"><a href="#">Tin
                     tức</a></li>
+                <li>
+                    <div>
+                        <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="tw"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="te"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
@@ -81,7 +108,7 @@
                                 <div class="match-body">
                                     <div class="d-flex justify-content-center justify-content-md-between justify-content-md-evenly align-items-start align-items-md-center">
                                         <div class="text-center match-team team-home">
-                                            <img class="lazyload" src="../assets/img/3431.png" alt="">
+                                            <img class="lazyload" src="assets/img/3431.png" alt="">
                                             <p class="mt-2 rlw-bold team-name">Greuther Furth</p>
                                         </div>
                                         <div class="text-center match-status">
@@ -127,7 +154,7 @@
                                             </div>
                                         </div>
                                         <div class="text-center match-team team-away">
-                                            <img class="lazyload" src="../assets/img/503.png" alt="">
+                                            <img class="lazyload" src="assets/img/503.png" alt="">
                                             <p class="mt-2 rlw-bold team-name">Bayern Munich</p>
                                         </div>
                                     </div>
@@ -162,6 +189,7 @@
                                 </div>
                                 <div class="embed-responsive embed-responsive-16by9" id="box-video">
                                     <div class="embed-responsive-item" id="video-root">
+                                        <span class="close-video"><i class="fas fa-times"></i></span>
                                         <iframe width="100%" height="100%" frameborder="0" allowtransparency="true"
                                                 allowfullscreen="true"
                                                 allow="autoplay; fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -238,7 +266,7 @@
                                     <div class="text-uppercase mb-3 osw-bold section-title">
                                         <span class="d-flex align-items-center">
                                             <img class="lazyload icon-section-title"
-                                                 src="../assets/img/football.png"
+                                                 src="assets/img/football.png"
                                                  alt=""> Mô phỏng trận đấu</span>
                                     </div>
                                     <div class="simulation-body">
@@ -262,7 +290,7 @@
                                                 <div class="text-uppercase px-4 pb-3 osw-bold section-title section-border">
                                                     <span class="d-flex align-items-center"><img
                                                             class="lazyload icon-section-title"
-                                                            src="../assets/img/football.png"
+                                                            src="assets/img/football.png"
                                                             alt=""> Thống kê bóng đá</span>
                                                 </div>
                                                 <div class="box_live">
@@ -281,7 +309,7 @@
                                                 <div class="text-uppercase px-4 pb-3 osw-bold section-title section-border">
                                                     <span class="d-flex align-items-center"><img
                                                             class="lazyload icon-section-title"
-                                                            src="../assets/img/football.png"
+                                                            src="assets/img/football.png"
                                                             alt=""> Diễn biến trận đấu</span>
                                                 </div>
                                                 <div class="box_live box_scroll">
@@ -303,7 +331,7 @@
                                                 <div class="text-uppercase px-4 pb-3 osw-bold section-title section-border">
                                                     <span class="d-flex align-items-center"><img
                                                             class="lazyload icon-section-title"
-                                                            src="../assets/img/football.png"
+                                                            src="assets/img/football.png"
                                                             alt=""> THÀNH TÍCH ĐỐI ĐẦU (6 TRẬN GẦN NHẤT)</span>
                                                 </div>
                                                 <div class="panel">
@@ -315,7 +343,7 @@
                                                                 </div>
                                                                 <div class="d-flex justify-content-center align-items-center match__teams">
                                                                     <div class="d-flex align-items-center match__team match__team--home">
-                                                                        <img src="../assets/img/503.png"
+                                                                        <img src="assets/img/503.png"
                                                                              alt="FC Bayern München"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-home-name">
@@ -324,7 +352,7 @@
                                                                     </div>
                                                                     <div class="osw-bold btn-blue match__ts">2 - 0</div>
                                                                     <div class="d-flex align-items-center match__team match__team--away">
-                                                                        <img src="../assets/img/3431.png"
+                                                                        <img src="assets/img/3431.png"
                                                                              alt="SpVgg Greuther Fürth"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-away-name">
@@ -346,7 +374,7 @@
                                                                 </div>
                                                                 <div class="d-flex justify-content-center align-items-center match__teams">
                                                                     <div class="d-flex align-items-center match__team match__team--home">
-                                                                        <img src="../assets/img/3431.png"
+                                                                        <img src="assets/img/3431.png"
                                                                              alt="SpVgg Greuther Fürth"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-home-name">
@@ -355,7 +383,7 @@
                                                                     </div>
                                                                     <div class="osw-bold btn-blue match__ts">0 - 3</div>
                                                                     <div class="d-flex align-items-center match__team match__team--away">
-                                                                        <img src="../assets/img/503.png"
+                                                                        <img src="assets/img/503.png"
                                                                              alt="FC Bayern München"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-away-name">
@@ -377,7 +405,7 @@
                                                                 </div>
                                                                 <div class="d-flex justify-content-center align-items-center match__teams">
                                                                     <div class="d-flex align-items-center match__team match__team--home">
-                                                                        <img src="../assets/img/503.png"
+                                                                        <img src="assets/img/503.png"
                                                                              alt="FC Bayern München"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-home-name">
@@ -386,7 +414,7 @@
                                                                     </div>
                                                                     <div class="osw-bold btn-blue match__ts">6 - 2</div>
                                                                     <div class="d-flex align-items-center match__team match__team--away">
-                                                                        <img src="../assets/img/3431.png"
+                                                                        <img src="assets/img/3431.png"
                                                                              alt="SpVgg Greuther Fürth"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-away-name">
@@ -414,7 +442,7 @@
                                                 <div class="text-uppercase px-4 pb-3 osw-bold section-title section-border">
                                                     <span class="d-flex align-items-center"><img
                                                             class="lazyload icon-section-title"
-                                                            src="../assets/img/football.png"
+                                                            src="assets/img/football.png"
                                                             alt=""> Kết quả gần đây</span>
                                                 </div>
                                                 <div class="panel">
@@ -429,7 +457,7 @@
                                                                 </div>
                                                                 <div class="d-flex justify-content-center align-items-center match__teams">
                                                                     <div class="d-flex align-items-center match__team match__team--home">
-                                                                        <img src="../assets/img/3317.png"
+                                                                        <img src="assets/img/3317.png"
                                                                              alt="Hertha BSC"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-home-name">
@@ -438,7 +466,7 @@
                                                                     </div>
                                                                     <div class="osw-bold btn-blue match__ts">2 : 1</div>
                                                                     <div class="d-flex align-items-center match__team match__team--away">
-                                                                        <img src="../assets/img/3431.png"
+                                                                        <img src="assets/img/3431.png"
                                                                              alt="SpVgg Greuther Fürth"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-away-name">
@@ -460,7 +488,7 @@
                                                                 </div>
                                                                 <div class="d-flex justify-content-center align-items-center match__teams">
                                                                     <div class="d-flex align-items-center match__team match__team--home">
-                                                                        <img src="../assets/img/3431.png"
+                                                                        <img src="assets/img/3431.png"
                                                                              alt="SpVgg Greuther Fürth"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-home-name">
@@ -469,7 +497,7 @@
                                                                     </div>
                                                                     <div class="osw-bold btn-blue match__ts">0 : 2</div>
                                                                     <div class="d-flex align-items-center match__team match__team--away">
-                                                                        <img src="../assets/img/510.png"
+                                                                        <img src="assets/img/510.png"
                                                                              alt="VfL Wolfsburg"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-away-name">
@@ -491,7 +519,7 @@
                                                                 </div>
                                                                 <div class="d-flex justify-content-center align-items-center match__teams">
                                                                     <div class="d-flex align-items-center match__team match__team--home">
-                                                                        <img src="../assets/img/794.png"
+                                                                        <img src="assets/img/794.png"
                                                                              alt="1. FSV Mainz 05"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-home-name">
@@ -500,7 +528,7 @@
                                                                     </div>
                                                                     <div class="osw-bold btn-blue match__ts">3 : 0</div>
                                                                     <div class="d-flex align-items-center match__team match__team--away">
-                                                                        <img src="../assets/img/3431.png"
+                                                                        <img src="assets/img/3431.png"
                                                                              alt="SpVgg Greuther Fürth"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-away-name">
@@ -522,7 +550,7 @@
                                                                 </div>
                                                                 <div class="d-flex justify-content-center align-items-center match__teams">
                                                                     <div class="d-flex align-items-center match__team match__team--home">
-                                                                        <img src="../assets/img/3431.png"
+                                                                        <img src="assets/img/3431.png"
                                                                              alt="SpVgg Greuther Fürth"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-home-name">
@@ -531,7 +559,7 @@
                                                                     </div>
                                                                     <div class="osw-bold btn-blue match__ts">1 : 1</div>
                                                                     <div class="d-flex align-items-center match__team match__team--away">
-                                                                        <img src="../assets/img/2927.png"
+                                                                        <img src="assets/img/2927.png"
                                                                              alt="DSC Arminia Bielefeld"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-away-name">
@@ -553,7 +581,7 @@
                                                                 </div>
                                                                 <div class="d-flex justify-content-center align-items-center match__teams">
                                                                     <div class="d-flex align-items-center match__team match__team--home">
-                                                                        <img src="../assets/img/3319.png"
+                                                                        <img src="assets/img/3319.png"
                                                                              alt="VfB Stuttgart"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-home-name">
@@ -562,7 +590,7 @@
                                                                     </div>
                                                                     <div class="osw-bold btn-blue match__ts">5 : 1</div>
                                                                     <div class="d-flex align-items-center match__team match__team--away">
-                                                                        <img src="../assets/img/3431.png"
+                                                                        <img src="assets/img/3431.png"
                                                                              alt="SpVgg Greuther Fürth"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-away-name">
@@ -584,7 +612,7 @@
                                                                 </div>
                                                                 <div class="d-flex justify-content-center align-items-center match__teams">
                                                                     <div class="d-flex align-items-center match__team match__team--home">
-                                                                        <img src="../assets/img/3915.png"
+                                                                        <img src="assets/img/3915.png"
                                                                              alt="Babelsberg"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-home-name">
@@ -593,7 +621,7 @@
                                                                     </div>
                                                                     <div class="osw-bold btn-blue match__ts">2 : 2</div>
                                                                     <div class="d-flex align-items-center match__team match__team--away">
-                                                                        <img src="../assets/img/3431.png"
+                                                                        <img src="assets/img/3431.png"
                                                                              alt="SpVgg Greuther Fürth"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-away-name">
@@ -618,7 +646,7 @@
                                                                 </div>
                                                                 <div class="d-flex justify-content-center align-items-center match__teams">
                                                                     <div class="d-flex align-items-center match__team match__team--home">
-                                                                        <img src="../assets/img/503.png"
+                                                                        <img src="assets/img/503.png"
                                                                              alt="FC Bayern München"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-home-name">
@@ -627,7 +655,7 @@
                                                                     </div>
                                                                     <div class="osw-bold btn-blue match__ts">7 : 0</div>
                                                                     <div class="d-flex align-items-center match__team match__team--away">
-                                                                        <img src="../assets/img/999.png"
+                                                                        <img src="assets/img/999.png"
                                                                              alt="VfL Bochum 1848"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-away-name">
@@ -649,7 +677,7 @@
                                                                 </div>
                                                                 <div class="d-flex justify-content-center align-items-center match__teams">
                                                                     <div class="d-flex align-items-center match__team match__team--home">
-                                                                        <img src="../assets/img/83.png"
+                                                                        <img src="assets/img/83.png"
                                                                              alt="FC Barcelona"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-home-name">
@@ -658,7 +686,7 @@
                                                                     </div>
                                                                     <div class="osw-bold btn-blue match__ts">0 : 3</div>
                                                                     <div class="d-flex align-items-center match__team match__team--away">
-                                                                        <img src="../assets/img/503.png"
+                                                                        <img src="assets/img/503.png"
                                                                              alt="FC Bayern München"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-away-name">
@@ -680,7 +708,7 @@
                                                                 </div>
                                                                 <div class="d-flex justify-content-center align-items-center match__teams">
                                                                     <div class="d-flex align-items-center match__team match__team--home">
-                                                                        <img src="../assets/img/277.png"
+                                                                        <img src="assets/img/277.png"
                                                                              alt="RB Leipzig"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-home-name">
@@ -689,7 +717,7 @@
                                                                     </div>
                                                                     <div class="osw-bold btn-blue match__ts">1 : 4</div>
                                                                     <div class="d-flex align-items-center match__team match__team--away">
-                                                                        <img src="../assets/img/503.png"
+                                                                        <img src="assets/img/503.png"
                                                                              alt="FC Bayern München"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-away-name">
@@ -711,7 +739,7 @@
                                                                 </div>
                                                                 <div class="d-flex justify-content-center align-items-center match__teams">
                                                                     <div class="d-flex align-items-center match__team match__team--home">
-                                                                        <img src="../assets/img/503.png"
+                                                                        <img src="assets/img/503.png"
                                                                              alt="FC Bayern München"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-home-name">
@@ -720,7 +748,7 @@
                                                                     </div>
                                                                     <div class="osw-bold btn-blue match__ts">5 : 0</div>
                                                                     <div class="d-flex align-items-center match__team match__team--away">
-                                                                        <img src="../assets/img/3317.png"
+                                                                        <img src="assets/img/3317.png"
                                                                              alt="Hertha BSC"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-away-name">
@@ -742,7 +770,7 @@
                                                                 </div>
                                                                 <div class="d-flex justify-content-center align-items-center match__teams">
                                                                     <div class="d-flex align-items-center match__team match__team--home">
-                                                                        <img src="../assets/img/4200.png"
+                                                                        <img src="assets/img/4200.png"
                                                                              alt="Bremer SV"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-home-name">
@@ -752,7 +780,7 @@
                                                                     <div class="osw-bold btn-blue match__ts">0 : 12
                                                                     </div>
                                                                     <div class="d-flex align-items-center match__team match__team--away">
-                                                                        <img src="../assets/img/503.png"
+                                                                        <img src="assets/img/503.png"
                                                                              alt="FC Bayern München"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-away-name">
@@ -774,7 +802,7 @@
                                                                 </div>
                                                                 <div class="d-flex justify-content-center align-items-center match__teams">
                                                                     <div class="d-flex align-items-center match__team match__team--home">
-                                                                        <img src="../assets/img/503.png"
+                                                                        <img src="assets/img/503.png"
                                                                              alt="FC Bayern München"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-home-name">
@@ -783,7 +811,7 @@
                                                                     </div>
                                                                     <div class="osw-bold btn-blue match__ts">3 : 2</div>
                                                                     <div class="d-flex align-items-center match__team match__team--away">
-                                                                        <img src="../assets/img/3320.png"
+                                                                        <img src="assets/img/3320.png"
                                                                              alt="1. FC Köln"
                                                                              class="lazyload match__team--logo">
                                                                         <div class="match__team--name match__team-away-name">
@@ -852,100 +880,22 @@
             </div>
         </div>
     </main>
-    <footer id="footer" class="flw footer-wrapper">
-        <section class="py-3 section-widget-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 offset-md-2 col-md-8">
-                        <div class="text-center">
-                            <p>
-                                <a href="../index.html">
-                                    <img class="lazyload"
-                                         src="../assets/img/90phutnet.png"
-                                         alt="">
-                                </a>
-                            </p>
-                            <div class="menu-footer-container">
-                                <ul id="menu-footer" class="navbar my-4 p-0 d-flex justify-content-center">
-                                    <li id="menu-item-986"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-986">
-                                        <a href="#">Về Chúng Tôi</a></li>
-                                    <li id="menu-item-984"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-984">
-                                        <a href="#">Điều Khoản</a></li>
-                                    <li id="menu-item-985"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-985">
-                                        <a href="#">Chính Sách</a></li>
-                                    <li id="menu-item-983"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-983">
-                                        <a href="#">Liên Hệ</a></li>
-                                </ul>
-                            </div>
-                            <div class="mb-4"
-                                 style="font-family: 'Raleway', sans-serif; font-weight: 400;font-size: 15px;line-height: 23px;">
-                                Tận hưởng trọn vẹn thời gian thi đấu được phát sóng trực tiếp bóng đá tại 90Phut TV.
-                                Kênh bóng đá trực tuyến tốc độ cao mang lại sự trải nghiệm tốt nhất dành cho fan hâm mộ
-                                khi truy cập <a class="waffle-rich-text-link" href="https://90phut.net/">90Phut.net</a>
-                                - Ngoài ra, 90p TV còn mang đến bảng theo dõi lịch thi đấu bóng đá, bảng xếp hạng, tỷ lệ
-                                kèo nhà cái, kết quả bóng đá, những video highlight, hệ thống tin tức bóng đá được đội
-                                ngũ phóng viên cập nhật nhanh nhất. Truy cập ngay 90Phut TV để tận hưởng miễn phí và
-                                đồng hành cùng chúng tôi.
-                            </div>
-                            <p class="text-gray mb-0">Địa chỉ : 186 Mễ Trì, Từ Liêm, Hà Nội 100000.</p>
-                            <p class="mt-2"><a rel="nofollow"
-                                               href="https://www.dmca.com/Protection/Status.aspx?ID=6ab93c91-86ab-46d9-b8e7-cd2154648514&amp;refurl=https://90phut.net/truc-tiep/man-utd-vs-aston-villa-1830-25-09/#off-chat"
-                                               title="DMCA.com Protection Status" class="dmca-badge"> <img
-                                    src="https://images.dmca.com/Badges/_dmca_premi_badge_5.png?ID=6ab93c91-86ab-46d9-b8e7-cd2154648514"
-                                    alt="DMCA.com Protection Status"></a>
-                                <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
-                            </p>
-                        </div>
-                        <div class="sosial_footer mt-3 text-center">
-                            <a target="_blank" rel="nofollow" href="https://about.me/tv90phutnet">
-                                <span class="fas fa-info-circle" style="font-size: 24px;"></span>
-                            </a>
-                            <a target="_blank" rel="nofollow" href="https://www.facebook.com/90phutnettv/">
-                                <span class="fab fa-facebook" style="font-size: 24px;"></span>
-                            </a>
-                            <a target="_blank" rel="nofollow" href="https://twitter.com/90phutnettv">
-                                <span class="fab fa-twitter" style="font-size: 24px;"></span>
-                            </a>
-                            <a target="_blank" rel="nofollow" href="https://www.pinterest.com/90phutnettv/">
-                                <span class="fab fa-pinterest" style="font-size: 24px;"></span>
-                            </a>
-                            <a target="_blank" rel="nofollow" href="https://instagram/90phutnettv/">
-                                <span class="fab fa-instagram" style="font-size: 24px;"></span>
-                            </a>
-                            <a target="_blank" rel="nofollow" href="https://www.behance.net/90phutnettv/">
-                                <span class="fab fa-behance" style="font-size: 24px;"></span>
-                            </a>
-                            <a target="_blank" rel="nofollow"
-                               href="https://www.youtube.com/channel/UCFHEJT-sYDrZROz77bAqc5Q/about">
-                                <span class="fab fa-youtube" style="font-size: 24px;"></span>
-                            </a>
-                        </div>
-                    </div>
+    <footer>
+        <ul class="footermb">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div>
+                    <button class="btn mx-2">Privacy policy</button>
+                    <button class="btn mx-2">who are we</button>
+                    <button class="btn mx-2">call us</button>
                 </div>
+                <button class="btn">new yalla shoot</button>
             </div>
-        </section>
-        <section class="py-2 section-copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="text-center rlw-regular copyright">
-                            <p>Copyright © 2021 90phut.net</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <a href="#" class="scrollTo show"><i class="fa fa-angle-up"></i></a>
+        </ul>
     </footer>
 </div>
 </body>
-<script src="../assets/lib/js/jquery-3.6.0.js"></script>
-<script src="../assets/lib/js/bootstrap.min.js"></script>
-<script src="../assets/js/detail.js"></script>
-<script src="../assets/js/responsive.js"></script>
+<script src="assets/lib/js/jquery-3.6.0.js"></script>
+<script src="assets/lib/js/bootstrap.min.js"></script>
+<script src="assets/js/detail.js"></script>
+<script src="assets/js/responsive.js"></script>
 </html>

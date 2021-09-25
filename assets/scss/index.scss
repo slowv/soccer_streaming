@@ -11,7 +11,71 @@ $primary2: #52AF23;
     margin: 20px 0;
 
     .card {
-      background: #0e172e;
+      background: #fff;
+
+      .matches {
+        border-radius: 10px;
+        color: #1d1d1d;
+        background: #f3f3f3;
+        margin-bottom: 20px;
+
+        .team-home {
+          flex:1;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          img {
+            width: 80px;
+          }
+        }
+
+        .team-away {
+          @extend .team-home;
+        }
+
+        .status-box {
+          text-align: center;
+
+          .score {
+            font-size: 20px;
+            margin-bottom: 15px;
+          }
+
+          .status {
+            color: #fff;
+            padding: 2px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+            &.green {
+              background: #0F6F37;
+            }
+          }
+        }
+
+        .toDetail {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.29);
+          display: none;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+
+          i {
+            font-size: 40px;
+            color: #fff;
+          }
+        }
+
+        &:hover {
+          .toDetail {
+            display: flex;
+          }
+        }
+      }
 
       .card-header {
         border-color: #414141;
@@ -21,98 +85,6 @@ $primary2: #52AF23;
     .btn-main {
       background: $primary2;
       border-color: $primary2;
-    }
-
-    .match {
-      border-radius: 6px;
-      background-color: #2C354C;
-      background-image: url(../img/bg-match.svg);
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      color: #fff;
-      transition: background-color 200ms linear;
-
-      &:hover {
-        background-color: #6B1B09;
-
-        .match-team {
-          border-color: rgba(129, 129, 150, 0.3);
-        }
-      }
-
-      .match-score {
-        font-size: 19px;
-        background-color: #0D45D4;
-        padding: 1px 12px;
-        font-family: "Oswald", sans-serif;
-        border-radius: 2px;
-      }
-
-      .match-now {
-        font-size: 13px;
-        background-color: #01B744;
-        padding: 0px 10px;
-        font-family: "Oswald", sans-serif;
-        font-weight: 500;
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: -35px;
-        left: 50%;
-        border-radius: 8.4px;
-
-        &.red {
-          background-color: #e11d23;
-        }
-      }
-
-      .team-vs {
-        position: relative;
-
-        &:before {
-          content: "";
-          width: 10px;
-          height: 2px;
-          background: #fff;
-          display: block;
-          transform: translate(-50%, -50%);
-          left: 50%;
-          top: 50%;
-          position: absolute;
-        }
-      }
-
-      .match-team {
-        font-size: 16px;
-
-        img {
-          width: 70px;
-          height: 70px;
-          -o-object-fit: contain;
-          object-fit: contain;
-        }
-      }
-
-      a.link-match {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-      }
-
-      .match-league, .match-date {
-        font-size: 12px;
-      }
-
-      .match-date {
-        border-radius: 2px;
-        padding: 3px 11px;
-        background-color: #ffc107;
-        color: #333;
-      }
     }
 
     .loadmore {

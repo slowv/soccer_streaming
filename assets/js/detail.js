@@ -1,5 +1,7 @@
 $(document).ready(() => {
     let offChat = false;
+    let isCloseMini = false;
+
     $('#btn-off-chat').click(() => {
         offChat = !offChat;
         if (offChat) {
@@ -11,15 +13,24 @@ $(document).ready(() => {
         }
     });
 
+    $('.close-video').click(() => {
+        const videoRoot = $('#video-root');
+        videoRoot.removeClass('mini');
+        isCloseMini = true;
+    });
+
     $(window).scroll(function() {
-        if ($(window).width() >= 1024) {
+        if ($(window).width() >= 768) {
             const videoBox = $("#box-video");
             const videoRoot = $('#video-root');
             const window_offset = videoBox.offset().top - $(window).scrollTop();
             if (window_offset <= 0) {
-                videoRoot.addClass('mini');
+                if (!isCloseMini) {
+                    videoRoot.addClass('mini');
+                }
             } else {
                 videoRoot.removeClass('mini');
+                isCloseMini = false;
             }
         }
     });
