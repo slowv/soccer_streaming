@@ -10,4 +10,15 @@ $(document).ready(() => {
             $('#btn-off-chat').html('TẮT CHAT')
         }
     });
+
+    $(window).scroll(function() {
+        const videoBox = $("#box-video");
+        const videoRoot = $('#video-root');
+        const window_offset = videoBox.offset().top - $(window).scrollTop();
+       if (window_offset <= 0) {
+           videoRoot.addClass('mini');
+       } else {
+           videoRoot.removeClass('mini');
+       }
+    });
 });
