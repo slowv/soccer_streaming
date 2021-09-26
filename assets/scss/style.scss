@@ -85,7 +85,7 @@ body {
       -khtml-user-select: none;
       -ms-user-select: none;
       -moz-user-select: none;
-      margin-right: 10px;
+      margin-right: 20px;
 
       span {
         display: block;
@@ -133,9 +133,14 @@ body {
             -webkit-box-sizing: border-box;
             border-bottom: 2px solid transparent;
 
+            &.active {
+              color: #fff;
+              background-color: #040C1F
+            }
+
             &:hover {
               color: #fff;
-              border-bottom: 2px solid #fff;
+              background-color: #040C1F
             }
           }
         }
