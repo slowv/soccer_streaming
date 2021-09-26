@@ -12,19 +12,24 @@ $primary2: #52AF23;
 
     .card {
       background: $primary;
-      border: 1px solid #151e29;
+      border: none;
 
       &.new-shoot {
-        .card .card-body {
-          background-color: #fff;
+        .card {
+          .card-body {
+            background-color: #fff;
+          }
         }
       }
 
       .card-header {
         background-color: #2C354C;
+        margin-bottom: 20px;
+        border-radius: 5px;
       }
 
       .matches {
+        height: 180px;
         border-radius: 10px;
         background-color: #2C354C;
         margin-bottom: 20px;
@@ -77,20 +82,22 @@ $primary2: #52AF23;
           position: absolute;
           width: 100%;
           height: 100%;
-          background-color: rgba(107, 27, 9, 0.18);
           display: none;
           justify-content: center;
+          background-color: rgba(0, 0, 0, 0.16);
           align-items: center;
           border-radius: 10px;
           transition: .3s;
 
           i {
-            font-size: 40px;
+            font-size: 50px;
             color: #fff;
           }
         }
 
         &:hover {
+          background-color: rgb(107, 27, 9);
+
           .toDetail {
             display: flex;
           }
