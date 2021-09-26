@@ -11,19 +11,36 @@ $primary2: #52AF23;
     margin: 20px 0;
 
     .card {
-      background: #fff;
+      background: $primary;
+      border: 1px solid #4c4c4c;
+
+      &.new-shoot {
+        .card .card-body {
+          background-color: #fff;
+        }
+      }
+
+      .card-header {
+        background-color: #2C354C;
+      }
 
       .matches {
         border-radius: 10px;
-        color: #1d1d1d;
-        background: #f3f3f3;
+        background-color: #2C354C;
         margin-bottom: 20px;
+        background-image: url(../img/bg-match.svg);
+        background-position: center center;
+        background-size: cover;
+        color: #fff;
+        transition: background-color 200ms linear;
 
         .team-home {
-          flex:1;
+          color: #fff;
+          flex: 1;
           display: flex;
           justify-content: space-around;
           align-items: center;
+
           img {
             width: 80px;
           }
@@ -48,6 +65,7 @@ $primary2: #52AF23;
             align-items: center;
             justify-content: center;
             border-radius: 30px;
+
             &.green {
               background: #0F6F37;
             }
@@ -58,11 +76,12 @@ $primary2: #52AF23;
           position: absolute;
           width: 100%;
           height: 100%;
-          background: rgba(0, 0, 0, 0.29);
+          background-color: rgba(107, 27, 9, 0.18);
           display: none;
           justify-content: center;
           align-items: center;
           border-radius: 10px;
+          transition: .3s;
 
           i {
             font-size: 40px;
