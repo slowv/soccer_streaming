@@ -103,6 +103,24 @@ body {
       display: flex;
       justify-content: space-between;
 
+      &.index2 {
+        ul.link {
+          li {
+            a {
+              &.active {
+                color: #fff;
+                background-color: #C44B3A !important;
+              }
+
+              &:hover {
+                color: #fff;
+                background-color: #C44B3A !important;
+              }
+            }
+          }
+        }
+      }
+
       ul.link {
         display: flex;
         margin: 0;
