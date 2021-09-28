@@ -282,6 +282,22 @@ $desktop-width: 1024px;
 
       }
 
+      #newList {
+        .card-img-top {
+          height: 150px;
+          object-fit: cover;
+        }
+
+        .card-body {
+          padding: 10px;
+
+          .card-text {
+            font-size: 13px;
+          }
+        }
+
+      }
+
       .card-header {
         border-color: #414141;
       }

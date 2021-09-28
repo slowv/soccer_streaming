@@ -67,7 +67,7 @@ $desktop-width: 1024px;
           top: 0;
           padding: 2px 20px;
           background: #F77948;
-          transition:.3s;
+          transition: .3s;
           border-top-right-radius: 10px;
           border-bottom-left-radius: 10px;
         }
@@ -132,7 +132,7 @@ $desktop-width: 1024px;
           background-color: rgba(37, 121, 67, 0.5);
 
           .hot-match {
-            background:#fff !important;
+            background: #fff !important;
             color: #353535;
           }
 
@@ -144,7 +144,7 @@ $desktop-width: 1024px;
 
       .nha-cai {
         display: block;
-        overflow:hidden;
+        overflow: hidden;
         background: #1A1D23;
 
         .box-child {
@@ -223,6 +223,22 @@ $desktop-width: 1024px;
 
         .sub-title {
           color: #009A3F;
+        }
+
+      }
+
+      #newList {
+        .card-img-top {
+          height: 150px;
+          object-fit: cover;
+        }
+
+        .card-body {
+          padding: 10px;
+
+          .card-text {
+            font-size: 13px;
+          }
         }
 
       }
