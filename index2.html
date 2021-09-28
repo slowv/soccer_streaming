@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bóng đá trực tuyến</title>
+    <link rel="stylesheet" href="./assets/lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./assets/scss/style.css">
+    <link rel="stylesheet" href="./assets/scss/index2.css">
+</head>
+<body>
+<div id="app">
+    <header>
+        <div class="container d-flex">
+            <div class="navbar-brand">
+                <a href="./index.html" title="يلا شوت الجديد الرسمي">
+                    <span>يلا شوت الجديد</span>
+                    <span>yalla-shoot-new.com</span>
+                </a>
+            </div>
+            <nav class="nav-desktop">
+                <ul class="link">
+                    <li><a href="/index.html" class="active">Trang chủ</a></li>
+                    <li><a href="#">Lịch thi đấu</a></li>
+                    <li><a href="#">video highlight</a></li>
+                    <li><a href="#">Bảng xếp hạng</a></li>
+                    <li><a href="#">Tỉ lệ kèo</a></li>
+                    <li><a href="#">Kết quả</a></li>
+                    <li><a href="#">Livescore</a></li>
+                    <li><a href="#">tin tức</a></li>
+                </ul>
+                <div class="social-box">
+                    <ul>
+                        <li>
+                            <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="tw"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="te"><i class="fab fa-telegram-plane"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="d-block d-lg-none py-2 menu-mobile w-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between align-items-center">
+                        <div class="navbar-brand">
+                            <a href="./index.html" title="يلا شوت الجديد الرسمي">
+                                <span>يلا شوت الجديد</span>
+                                <span>yalla-shoot-new.com</span>
+                            </a>
+                        </div>
+                        <div class="button-navbar">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav id="mainnav-mobi" class="mainnav d-none">
+            <ul id="menu-menu-header-1" class="header-nav-main">
+                <li class="d-flex flex-row"><a href="index.html">Trang chủ</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67"><a href="#">Lịch thi
+                    đấu</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="#">Video
+                    highlight</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65"><a href="#">Bảng xếp
+                    hạng</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1811"><a href="#">Tỷ lệ
+                    kèo</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66"><a href="#">Kết
+                    quả</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a
+                        href="#">Livescore</a></li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-925"><a href="#">Tin
+                    tức</a></li>
+                <li>
+                    <div>
+                        <a href="#" class="yt"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="tw"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="te"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="card">
+<!--                <div class="card-header">-->
+<!--                    <div class="row">-->
+<!--                        <div class="my-1 col-lg-8 col-12 col-md-7">-->
+<!--                            <button class="btn btn-warning text-white my-1" style="margin-right: 20px;">Trận đấu ngày-->
+<!--                                mai-->
+<!--                            </button>-->
+<!--                            <button class="btn-danger btn my-1">Trận đấu hôm nay</button>-->
+<!--                        </div>-->
+<!--                        <div class="col-lg-4 col-12 col-md-5 text-right align-items-center d-flex justify-content-lg-end justify-content-md-end">-->
+<!--                            <button class="btn-danger btn">Trận đấu quan trọng hôm nay</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+                <div class="card-body py-0">
+                    <div class="row">
+                        <div class="col-12 p-0">
+                            <div class="card matches p-0">
+                                <a href="./detail.html" class="toDetail">
+                                    <i class="fas fa-play-circle"></i>
+                                </a>
+                                <div class="card-body d-flex align-items-center">
+                                    <div class="hot-match">HOT</div>
+                                   <div class="d-flex justify-content-around align-items-center" style="flex: 3">
+                                       <div>
+                                           <img src="./assets/img/football.png" alt="">
+                                           <span class="mx-2">Serge</span>
+                                       </div>
+                                       <span>VTV3</span>
+                                       <span class="position">ở giữa</span>
+                                   </div>
+                                   <div style="flex: 6" class="d-flex justify-content-around align-items-center">
+                                       <div class="team-home">
+                                           <img src="./assets/img/3915.png" alt="">
+                                           <div>Milan</div>
+                                       </div>
+                                       <div class="status-box">
+                                           <div class="status">Hiệp 2: 60'</div>
+                                           <div class="score">
+                                               1 - 0
+                                           </div>
+                                       </div>
+                                       <div class="team-away">
+                                           <div>Milan</div>
+                                           <img src="./assets/img/3317.png" alt="">
+                                       </div>
+                                   </div>
+                                </div>
+<!--                                <div class="card-footer d-flex justify-content-around">-->
+<!--                                    <div>The italian League</div>-->
+<!--                                    <div>It is not determined yet</div>-->
+<!--                                    <div>SSC SPORT 1HD</div>-->
+<!--                                </div>-->
+                            </div>
+                            <div class="card matches p-0">
+                                <a href="./detail.html" class="toDetail">
+                                    <i class="fas fa-play-circle"></i>
+                                </a>
+                                <div class="card-body d-flex align-items-center">
+                                    <div class="hot-match">HOT</div>
+                                   <div class="d-flex justify-content-around align-items-center" style="flex: 3">
+                                       <div>
+                                           <img src="./assets/img/football.png" alt="">
+                                           <span class="mx-2">Serge</span>
+                                       </div>
+                                       <span>VTV3</span>
+                                       <span class="position">ở giữa</span>
+                                   </div>
+                                   <div style="flex: 6" class="d-flex justify-content-around align-items-center">
+                                       <div class="team-home">
+                                           <img src="./assets/img/3915.png" alt="">
+                                           <div>Milan</div>
+                                       </div>
+                                       <div class="status-box">
+                                           <div class="status">Hiệp 2: 60'</div>
+                                           <div class="score">
+                                               1 - 0
+                                           </div>
+                                       </div>
+                                       <div class="team-away">
+                                           <div>Milan</div>
+                                           <img src="./assets/img/3317.png" alt="">
+                                       </div>
+                                   </div>
+                                </div>
+<!--                                <div class="card-footer d-flex justify-content-around">-->
+<!--                                    <div>The italian League</div>-->
+<!--                                    <div>It is not determined yet</div>-->
+<!--                                    <div>SSC SPORT 1HD</div>-->
+<!--                                </div>-->
+                            </div>
+                            <div class="card matches p-0">
+                                <a href="./detail.html" class="toDetail">
+                                    <i class="fas fa-play-circle"></i>
+                                </a>
+                                <div class="card-body d-flex align-items-center">
+                                    <div class="hot-match">HOT</div>
+                                    <div class="d-flex justify-content-around align-items-center" style="flex: 3">
+                                        <div>
+                                            <img src="./assets/img/football.png" alt="">
+                                            <span class="mx-2">Serge</span>
+                                        </div>
+                                        <span>VTV3</span>
+                                        <span class="position">ở giữa</span>
+                                    </div>
+                                    <div style="flex: 6" class="d-flex justify-content-around align-items-center">
+                                        <div class="team-home">
+                                            <img src="./assets/img/3915.png" alt="">
+                                            <div>Milan</div>
+                                        </div>
+                                        <div class="status-box">
+                                            <div class="status">Hiệp 2: 60'</div>
+                                            <div class="score">
+                                                1 - 0
+                                            </div>
+                                        </div>
+                                        <div class="team-away">
+                                            <div>Milan</div>
+                                            <img src="./assets/img/3317.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--                                <div class="card-footer d-flex justify-content-around">-->
+                                <!--                                    <div>The italian League</div>-->
+                                <!--                                    <div>It is not determined yet</div>-->
+                                <!--                                    <div>SSC SPORT 1HD</div>-->
+                                <!--                                </div>-->
+                            </div>
+                            <div class="card matches p-0">
+                                <a href="./detail.html" class="toDetail">
+                                    <i class="fas fa-play-circle"></i>
+                                </a>
+                                <div class="card-body d-flex align-items-center">
+                                    <div class="d-flex justify-content-around align-items-center" style="flex: 3">
+                                        <div>
+                                            <img src="./assets/img/football.png" alt="">
+                                            <span class="mx-2">Serge</span>
+                                        </div>
+                                        <span>VTV3</span>
+                                        <span class="position">ở giữa</span>
+                                    </div>
+                                    <div style="flex: 6" class="d-flex justify-content-around align-items-center">
+                                        <div class="team-home">
+                                            <img src="./assets/img/3915.png" alt="">
+                                            <div>Milan</div>
+                                        </div>
+                                        <div class="status-box">
+                                            <div class="status">Hiệp 2: 60'</div>
+                                            <div class="score">
+                                                1 - 0
+                                            </div>
+                                        </div>
+                                        <div class="team-away">
+                                            <div>Milan</div>
+                                            <img src="./assets/img/3317.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--                                <div class="card-footer d-flex justify-content-around">-->
+                                <!--                                    <div>The italian League</div>-->
+                                <!--                                    <div>It is not determined yet</div>-->
+                                <!--                                    <div>SSC SPORT 1HD</div>-->
+                                <!--                                </div>-->
+                            </div>
+                            <div class="card matches p-0">
+                                <a href="./detail.html" class="toDetail">
+                                    <i class="fas fa-play-circle"></i>
+                                </a>
+                                <div class="card-body d-flex align-items-center">
+                                    <div class="hot-match">HOT</div>
+                                    <div class="d-flex justify-content-around align-items-center" style="flex: 3">
+                                        <div>
+                                            <img src="./assets/img/football.png" alt="">
+                                            <span class="mx-2">Serge</span>
+                                        </div>
+                                        <span>VTV3</span>
+                                        <span class="position">ở giữa</span>
+                                    </div>
+                                    <div style="flex: 6" class="d-flex justify-content-around align-items-center">
+                                        <div class="team-home">
+                                            <img src="./assets/img/3915.png" alt="">
+                                            <div>Milan</div>
+                                        </div>
+                                        <div class="status-box">
+                                            <div class="status">Hiệp 2: 60'</div>
+                                            <div class="score">
+                                                1 - 0
+                                            </div>
+                                        </div>
+                                        <div class="team-away">
+                                            <div>Milan</div>
+                                            <img src="./assets/img/3317.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--                                <div class="card-footer d-flex justify-content-around">-->
+                                <!--                                    <div>The italian League</div>-->
+                                <!--                                    <div>It is not determined yet</div>-->
+                                <!--                                    <div>SSC SPORT 1HD</div>-->
+                                <!--                                </div>-->
+                            </div>
+                            <div class="card matches p-0">
+                                <a href="./detail.html" class="toDetail">
+                                    <i class="fas fa-play-circle"></i>
+                                </a>
+                                <div class="card-body d-flex align-items-center">
+                                    <div class="d-flex justify-content-around align-items-center" style="flex: 3">
+                                        <div>
+                                            <img src="./assets/img/football.png" alt="">
+                                            <span class="mx-2">Serge</span>
+                                        </div>
+                                        <span>VTV3</span>
+                                        <span class="position">ở giữa</span>
+                                    </div>
+                                    <div style="flex: 6" class="d-flex justify-content-around align-items-center">
+                                        <div class="team-home">
+                                            <img src="./assets/img/3915.png" alt="">
+                                            <div>Milan</div>
+                                        </div>
+                                        <div class="status-box">
+                                            <div class="status">Hiệp 2: 60'</div>
+                                            <div class="score">
+                                                1 - 0
+                                            </div>
+                                        </div>
+                                        <div class="team-away">
+                                            <div>Milan</div>
+                                            <img src="./assets/img/3317.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--                                <div class="card-footer d-flex justify-content-around">-->
+                                <!--                                    <div>The italian League</div>-->
+                                <!--                                    <div>It is not determined yet</div>-->
+                                <!--                                    <div>SSC SPORT 1HD</div>-->
+                                <!--                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="text-uppercase d-block text-center rlw-medium loadmore" data-page="2"
+                       data-number="10">
+                        Xem thêm trận đấu
+                        <img class="lazyload" src="assets/img/up-arrow.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="card mt-4 new-shoot">
+                <div class="card-header text-right">
+                    <button class="btn btn-secondary">
+                        News shoot
+                    </button>
+                </div>
+                <div class="card-body p-0">
+                    <div class="row ">
+                        <div class="mb-3 col-12 col-md-4 col-md-3 col-lg-3">
+                            <a href="#">
+                                <div class="card">
+                                    <img src="./assets/img/bg-video.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-secondary">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mb-3 col-12 col-md-4 col-md-3 col-lg-3">
+                            <a href="#">
+                                <div class="card">
+                                    <img src="./assets/img/bg-video.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-secondary">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mb-3 col-12 col-md-4 col-md-3 col-lg-3">
+                            <a href="#">
+                                <div class="card">
+                                    <img src="./assets/img/bg-video.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-secondary">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mb-3 col-12 col-md-4 col-md-3 col-lg-3">
+                            <a href="#">
+                                <div class="card">
+                                    <img src="./assets/img/bg-video.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-secondary">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mb-3 col-12 col-md-4 col-md-3 col-lg-3">
+                            <a href="#">
+                                <div class="card">
+                                    <img src="./assets/img/bg-video.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-secondary">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mb-3 col-12 col-md-4 col-md-3 col-lg-3">
+                            <a href="#">
+                                <div class="card">
+                                    <img src="./assets/img/bg-video.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-secondary">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mb-3 col-12 col-md-4 col-md-3 col-lg-3">
+                            <a href="#">
+                                <div class="card">
+                                    <img src="./assets/img/bg-video.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-secondary">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="mb-3 col-12 col-md-4 col-md-3 col-lg-3">
+                            <a href="#">
+                                <div class="card">
+                                    <img src="./assets/img/bg-video.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body text-secondary">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up
+                                            the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-4">
+                <div class="card-header text-right">
+                    <button class="btn btn-secondary">
+                        News official shoot
+                    </button>
+                </div>
+                <div class="card-body text-secondary">
+                    The new official yalla shoot site, yalla shoot new, watch the most important matches of the day,
+                    live mobile broadcast without cutting, on the exclusive yalla shoot link online, to transmit live
+                    matches on many live broadcast servers, to watch the matches of the five major leagues, and to watch
+                    matches of Arab leagues and international and European championships in one place. One through the
+                    new official Yalla Shoot website, and on the new Yalla shoot us website, you will be able to watch
+                    anywhere on the mobile without interruption, watch matches on many of the live broadcasts of YouTube
+                    and Twitch, through an exclusive transfer of the new Yalla Shoot website. The official website,
+                    which will be completely free to watch at any time and without annoying ads, to be able to watch the
+                    matches of your favorite team from Real Madrid and Barcelona in the Spanish League, Liverpool,
+                    Manchester City, United and more European teams, and watch the Egyptian league matches with Al-Ahly
+                    and Zamalek, watch the rest of the Arab leagues ,As well as watching the Champions League matches,
+                    the African Champions League and all the tournaments from the European League and the international
+                    championships from the World Cup, as well as the Club World Cup, and the new yalla shoot site will
+                    make you before the events the first Powell with an instantaneous update of the results of the
+                    matches, and you can enter any match And watch on a fast link that works non-stop and is suitable
+                    for all internet speeds.
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul class="footermb">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div>
+                    <button class="btn mx-2">Privacy policy</button>
+                    <button class="btn mx-2">who are we</button>
+                    <button class="btn mx-2">call us</button>
+                </div>
+                <button class="btn">new yalla shoot</button>
+            </div>
+        </ul>
+    </footer>
+</div>
+</body>
+<script src="./assets/lib/js/jquery-3.6.0.js"></script>
+<script src="./assets/lib/js/bootstrap.min.js"></script>
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/responsive.js"></script>
+</html>

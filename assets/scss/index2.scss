@@ -1,0 +1,153 @@
+$white: #fff;
+$primary: #040C1F;
+$primary2: #52AF23;
+
+#app {
+  position: relative;
+  background: $primary;
+  min-height: 100vh;
+
+  main {
+    margin: 20px 0;
+
+    .card {
+      background: $primary;
+      border: none;
+
+      &.new-shoot {
+        .card {
+          .card-body {
+            background-color: #fff;
+          }
+        }
+      }
+
+      .card-header {
+        background-color: #2C354C;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+
+      .matches {
+        border-radius: 10px;
+        background-color: #2C354C;
+        margin-bottom: 20px;
+        background-image: url(../img/bg-match.svg);
+        background-position: center center;
+        background-size: cover;
+        color: #fff;
+        transition: background-color 200ms linear;
+
+        .position {
+          font-weight: bold;
+          color: #05BDB4;
+        }
+
+        .card-body {
+          height: 80px;
+        }
+
+        .hot-match {
+          position: absolute;
+          right: 0;
+          top: 0;
+          padding: 2px 20px;
+          background: #F77948;
+          transition:.3s;
+          border-top-right-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+
+        .team-home {
+          color: #fff;
+          flex: 1;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          font-weight: 600;
+
+          img {
+            width: 50px;
+          }
+        }
+
+        .team-away {
+          @extend .team-home;
+        }
+
+        .status-box {
+          text-align: center;
+
+          .score {
+            margin-top: 10px;
+            font-size: 20px;
+            background: #0F4CD9;
+            color: #fff;
+          }
+
+          .status {
+            color: #fff;
+            padding: 2px 10px;
+            display: flex;
+            font-size: 13px;
+            width: 80px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+
+            &.green {
+              background: #0F6F37;
+            }
+          }
+        }
+
+        .toDetail {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: none;
+          justify-content: center;
+          background-color: rgba(0, 0, 0, 0.16);
+          align-items: center;
+          border-radius: 10px;
+          transition: .3s;
+
+          i {
+            font-size: 50px;
+            color: #fff;
+          }
+        }
+
+        &:hover {
+          background-color: rgba(37, 121, 67, 0.5);
+
+          .hot-match {
+            background:#fff !important;
+            color: #353535;
+          }
+
+          .toDetail {
+            display: flex;
+          }
+        }
+      }
+
+      .card-header {
+        border-color: #414141;
+      }
+    }
+
+    .btn-main {
+      background: $primary2;
+      border-color: $primary2;
+    }
+
+    .loadmore {
+      color: #AEB4C7;
+      font-size: 13px;
+    }
+
+  }
+}
+
+
