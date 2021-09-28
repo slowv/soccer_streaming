@@ -265,10 +265,18 @@ $desktop-width: 1024px;
           position: fixed;
           bottom: 10px;
           right: 10px;
-          top: 10px;
+          top: inherit;
           width: 400px;
           height: 225px;
           z-index: 10000;
+          background: #141417;
+          padding: 10px;
+
+          .nha-cai {
+            .sub-title {
+              color: #009A3F;
+            }
+          }
 
           &:hover {
             .close-video {

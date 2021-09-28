@@ -39,6 +39,17 @@ $primary2: #52AF23;
         color: #fff;
         transition: background-color 200ms linear;
 
+        .hot-match {
+          position: absolute;
+          right: 0;
+          top: 0;
+          padding: 2px 20px;
+          background: #F77948;
+          transition:.3s;
+          border-top-right-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+
         .team-home {
           color: #fff;
           flex: 1;
@@ -97,6 +108,11 @@ $primary2: #52AF23;
 
         &:hover {
           background-color: rgb(107, 27, 9);
+
+          .hot-match {
+            background:#fff !important;
+            color: #353535;
+          }
 
           .toDetail {
             display: flex;
