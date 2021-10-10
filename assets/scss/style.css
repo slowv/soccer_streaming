@@ -176,7 +176,7 @@ body footer .footermb {
   overflow: hidden;
   padding: 12px 0;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 767px) {
   body footer .footermb .dk {
     display: none !important;
   }
@@ -195,7 +195,7 @@ body footer .footermb {
     background: rgba(0, 0, 0, 0.2);
   }
 }
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 768px) {
   body footer .footermb .dk {
     display: flex !important;
   }

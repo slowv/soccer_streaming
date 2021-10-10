@@ -221,7 +221,7 @@ body {
       padding: 12px 0;
 
       
-      @media screen and (max-width: 650px) {
+      @media screen and (max-width: 767px) {
         .dk {
           display: none !important;
         }
@@ -245,7 +245,7 @@ body {
         }
       }
 
-      @media screen and (min-width: 650px) {
+      @media screen and (min-width: 768px) {
         .dk {
           display: flex !important;
         }
