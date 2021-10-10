@@ -220,6 +220,41 @@ body {
       overflow: hidden;
       padding: 12px 0;
 
+      
+      @media screen and (max-width: 650px) {
+        .dk {
+          display: none !important;
+        }
+
+        .mb {
+          display: flex !important;
+
+          button {
+            width: 100%;
+            background: transparent;
+
+            span {
+              display: block;
+              color: #fff;
+            }
+
+            &:hover {
+              background:rgba(0, 0, 0, 0.2);
+            }
+          }
+        }
+      }
+
+      @media screen and (min-width: 650px) {
+        .dk {
+          display: flex !important;
+        }
+
+        .mb {
+          display: none !important;
+        }
+      }
+
       button {
         background: #eceef2;
         border:8px;
